@@ -92,11 +92,11 @@ const skills = computed(() => {
 
 <template>
   <div class="w-[950px] mx-auto relative">
-    <img src="/img/beams.jpg" alt="" class="absolute top-1/2 left-1/2 max-w-none -translate-x-1/2 -translate-y-1/2" />
+    <img src="img/beams.jpg" alt="" class="absolute top-1/2 left-1/2 max-w-none -translate-x-1/2 -translate-y-1/2" />
     <div class="relative flex flex-col w-10/12 mx-auto">
       <div class="mt-10 flex flex-row">
         <div class="flex w-8/12 flex-row items-center">
-          <img src="/img/profile.jpg" class="rounded-full w-20 h-20 bg-cover object-cover mr-3" />
+          <img src="img/profile.jpg" class="rounded-full w-20 h-20 bg-cover object-cover mr-3" />
           <div class="flex flex-col">
             <h1 class="text-3xl font-bold">Hamed Taherpour</h1>
             <h4 class="mt-2 text-xl font-semibold text-gray-500">Front-end Developer</h4>
