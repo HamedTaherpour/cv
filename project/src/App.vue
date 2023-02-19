@@ -1,5 +1,5 @@
 <script setup>
-import { computed } from "@vue/runtime-core";
+import {computed} from "@vue/runtime-core";
 
 const experiences = [
   {
@@ -91,62 +91,67 @@ const skills = computed(() => {
 </script>
 
 <template>
-  <div class="w-[950px] mx-auto relative">
-    <img src="/img/beams.jpg" alt="" class="absolute top-1/2 left-1/2 max-w-none -translate-x-1/2 -translate-y-1/2" />
-    <div class="relative flex flex-col w-10/12 mx-auto">
-      <div class="mt-10 flex flex-row">
-        <div class="flex w-8/12 flex-row items-center">
-          <img src="/img/profile.jpg" class="rounded-full w-20 h-20 bg-cover object-cover mr-3" />
-          <div class="flex flex-col">
-            <h1 class="text-3xl font-bold">Hamed Taherpour</h1>
-            <h4 class="mt-2 text-xl font-semibold text-gray-500">Front-end Developer</h4>
+  <div class="w-full overflow-hidden">
+    <div class="w-[950px] mx-auto relative pb-10">
+      <img src="/img/beams.jpg" alt="" class="absolute top-1/2 left-1/2 max-w-none -translate-x-1/2 -translate-y-1/2"/>
+      <div class="relative flex flex-col w-10/12 mx-auto">
+        <div class="mt-10 flex flex-row">
+          <div class="flex w-8/12 flex-row items-center">
+            <img src="/img/profile.jpg" class="rounded-full w-20 h-20 bg-cover object-cover mr-3"/>
+            <div class="flex flex-col">
+              <h1 class="text-3xl font-bold">Hamed Taherpour</h1>
+              <h4 class="mt-2 text-xl font-semibold text-gray-500">Front-end Developer</h4>
+            </div>
+          </div>
+          <div class="flex w-4/12 flex-col gap-y-1 text-sm px-2">
+            <span class="font-medium">(+98) 937-150-8754</span>
+            <a href="mailto: dev.hamedt@gmail.com">dev.hamedt@gmail.com</a>
+            <div class="flex w-full flex-row gap-x-5">
+              <a href="https://github.com/HamedTaherpour" class="capitalize">github</a>
+              <a href="https://www.linkedin.com/in/hamed-taherpour-6a8558200/" class="capitalize">linkedin</a>
+              <a href="https://t.me/HamedTaherpour" class="capitalize">telegram</a>
+            </div>
           </div>
         </div>
-        <div class="flex w-4/12 flex-col gap-y-1 text-sm px-2">
-          <span class="font-medium">(+98) 937-150-8754</span>
-          <a href="mailto: dev.hamedt@gmail.com">dev.hamedt@gmail.com</a>
-          <div class="flex w-full flex-row gap-x-5">
-            <a href="https://github.com/HamedTaherpour" class="capitalize">github</a>
-            <a href="https://www.linkedin.com/in/hamed-taherpour-6a8558200/" class="capitalize">linkedin</a>
-            <a href="https://t.me/HamedTaherpour" class="capitalize">telegram</a>
-          </div>
-        </div>
-      </div>
-      <div class="mt-10 flex flex-row">
-        <div class="flex w-8/12 flex-col">
-          <div>
-            <h4 class="section-title">EXPERIENCES</h4>
-            <div class="flex flex-col mb-5" v-for="item in experiences" :key="item.company.title">
-              <h2 class="text-base font-bold text-black"><a :href="item.company.link" v-text="item.company.title"></a>, {{ item.city }} - {{ item.jobTitle }}</h2>
-              <div class="mt-1 mb-2 text-xs text-gray-400">{{ item.startDate }} - {{ item.endDate }}</div>
-              <div class="text-sm text-gray-500">
-                <p v-text="item.description"></p>
-                <div class="flex flex-wrap mt-1">
-                  <span class="mr-0.5">Stack:</span>
-                  <span v-for="(stack, index) in item.stack" :key="stack" class="px-0.5 text-xs font-semibold"> {{ stack }}<template v-if="index < item.stack.length - 1">,</template> </span>
+        <div class="mt-10 flex flex-row">
+          <div class="flex w-8/12 flex-col">
+            <div>
+              <h4 class="section-title">EXPERIENCES</h4>
+              <div class="flex flex-col mb-5" v-for="item in experiences" :key="item.company.title">
+                <h2 class="text-base font-bold text-black"><a :href="item.company.link" v-text="item.company.title"></a>,
+                  {{ item.city }} - {{ item.jobTitle }}</h2>
+                <div class="mt-1 mb-2 text-xs text-gray-400">{{ item.startDate }} - {{ item.endDate }}</div>
+                <div class="text-sm text-gray-500">
+                  <p v-text="item.description"></p>
+                  <div class="flex flex-wrap mt-1">
+                    <span class="mr-0.5">Stack:</span>
+                    <span v-for="(stack, index) in item.stack" :key="stack"
+                          class="px-0.5 text-xs font-semibold"> {{ stack }}<template
+                        v-if="index < item.stack.length - 1">,</template> </span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="flex w-4/12 flex-col px-2">
-          <h4 class="section-title">SKILLS</h4>
-          <span class="font-bold">Tools / Technologies: </span>
-          <ul class="list-inside list-disc font-semibold text-sm space-y-2 mt-1">
-            <li v-for="item in skills" :key="item" v-text="item"></li>
-          </ul>
-          <span class="font-bold mt-4">Concept / Knowledge: </span>
-          <ul class="list-inside list-disc font-semibold text-sm space-y-2 mt-1">
-            <li v-for="item in ConceptKnowledge" :key="item" v-text="item"></li>
-          </ul>
-          <h4 class="section-title mt-5">SOFT SKILLS</h4>
-          <ul class="list-inside list-disc font-semibold text-sm space-y-2">
-            <li v-for="item in softSkills" :key="item" v-text="item"></li>
-          </ul>
-          <h4 class="section-title mt-5">EDUCATION</h4>
-          <div>
-            <h2 class="text-base font-bold text-black">Kardani of Qods - Tehran Qods</h2>
-            <div class="mt-1 mb-2 text-xs text-gray-400">2017</div>
+          <div class="flex w-4/12 flex-col px-2">
+            <h4 class="section-title">SKILLS</h4>
+            <span class="font-bold">Tools / Technologies: </span>
+            <ul class="list-inside list-disc font-semibold text-sm space-y-2 mt-1">
+              <li v-for="item in skills" :key="item" v-text="item"></li>
+            </ul>
+            <span class="font-bold mt-4">Concept / Knowledge: </span>
+            <ul class="list-inside list-disc font-semibold text-sm space-y-2 mt-1">
+              <li v-for="item in ConceptKnowledge" :key="item" v-text="item"></li>
+            </ul>
+            <h4 class="section-title mt-5">SOFT SKILLS</h4>
+            <ul class="list-inside list-disc font-semibold text-sm space-y-2">
+              <li v-for="item in softSkills" :key="item" v-text="item"></li>
+            </ul>
+            <h4 class="section-title mt-5">EDUCATION</h4>
+            <div>
+              <h2 class="text-base font-bold text-black">Kardani of Qods - Tehran Qods</h2>
+              <div class="mt-1 mb-2 text-xs text-gray-400">2017</div>
+            </div>
           </div>
         </div>
       </div>
