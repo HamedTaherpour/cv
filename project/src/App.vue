@@ -1,7 +1,4 @@
 <script setup>
-import { computed } from "@vue/runtime-core";
-import { onMounted } from "vue";
-
 const experiences = [
   {
     jobTitle: "Front-end Developer",
@@ -14,7 +11,11 @@ const experiences = [
     city: "Karaj",
     description: "ArzDigital is the leading news agency in Iran’s cryptocurrency industry with over 30M monthly active users and we provide trading assistance services.",
     stack: ["Vue.js", "Nuxt.js", "TypeScript", "Tailwind CSS", "Quasar", "Storybook", "VueUse", "Vite", "SSR", "Highcharts", "Gitlab"],
-    bullet: ["Implemented server-side rendering to improve website SEO and speed for better user experience.", "I improved website performance by chunking JavaScript files, separating code for each page into smaller files, resulting in faster loading times, and reducing page <strong>load time from 3 seconds to 0.5 seconds.</strong>", "Developed and maintained a consistent design system for the project, resulting in improved visual coherence and efficient development process. This helped to <strong>reduce 60% of our challenges and discussions</strong> related to design and development.", "Interview <strong>over 20 candidates</<strong>"],
+    bullet: [
+      "Implemented server-side rendering to improve website SEO and speed, resulting in a better user experience.",
+      "I improved website performance by chunking JavaScript files and separating code for each page into smaller files, resulting in faster loading times. This reduced the page load time <strong>from 3 seconds to 0.5 seconds.</strong>",
+      "Developed and maintained a consistent design system for the project, resulting in improved visual coherence and an efficient development process. This helped to <strong>reduce 60% of the challenges and discussions</strong> related to design and development.",
+      "Interview <strong>over 20 candidates</<strong>"],
   },
   {
     jobTitle: "Front-end Developer",
@@ -27,7 +28,7 @@ const experiences = [
     city: "Remote",
     description: "MagicalAPI is a provider of cloud-based APIs for developers and companies.",
     stack: ["Vue.js", "Nuxt.js", "TypeScript", "Tailwind CSS", "Storybook", "VueUse", "Vite", "SSR", "Highcharts", "Gitlab"],
-    bullet: [],
+    bullet: ["I designed and implemented a unique and responsive landing page using Tailwind CSS, featuring various optimized animations to enhance user experience and reduce loading times."],
   },
   {
     jobTitle: "Front-end Developer",
@@ -38,9 +39,13 @@ const experiences = [
     startDate: "Feb, 2020",
     endDate: "Feb, 2021",
     city: "Karaj",
-    description: "Iran's Majaziland crypto exchange has <strong>3,000+ users</strong> for buying and selling crypto.",
+    description: "Iran's Majaziland crypto exchange currently serves over <strong>3,000 users</strong> for buying and selling cryptocurrency.",
     stack: ["Vue.js", "TypeScript", "Tailwind CSS", "Vuetify", "Gitlab"],
-    bullet: [" designing and developing a user-friendly and intuitive UI/UX for a digital currency exchange platform, user engagement and satisfaction improved, leading to an increase in transaction volume <strong> from 50 daily transactions to 250 daily</strong> transactions.", "Implemented a seamless and secure user verification process, ensuring compliance with regulations and mitigating risk of fraud, which resulted in a decrease in the number of <strong>support staff from 5 to 2</strong>", "Created and maintained an admin panel with advanced features for customer support and management, improving operational efficiency and customer satisfaction."],
+    bullet: [
+      "I designed and developed a user-friendly and intuitive UI/UX for a digital currency exchange platform, resulting in improved user engagement and satisfaction. As a result, daily transaction <strong>volume increased from 50 to 250.</strong>",
+      "I implemented a seamless and secure user verification process to ensure compliance with regulations and mitigate the risk of fraud. This led to a reduction in the number of <strong>support staff from 5 to 2.</strong>",
+      "Designed and maintained an advanced admin panel with robust features for efficient customer support and streamlined management, resulting in increased operational efficiency and higher customer satisfaction."
+    ],
   },
   {
     jobTitle: "Web Developer",
@@ -51,9 +56,13 @@ const experiences = [
     startDate: "Feb, 2017",
     endDate: "Feb, 2020",
     city: "Tehran",
-    description: "https://sahabapps.com",
+    description: "Nezaco is a game development company with one of its products being <a href='https://sahabapps.com'>Sahab</a>, a web-based software that specializes in accounting and inventory management for stores and restaurants.",
     stack: ["jQuery", "UIKit", "Bootstrap", "PHP", "CodeIgniter", "MySQL", "Gitlab"],
-    bullet: [],
+    bullet: [
+      "Developed a restaurant website for accounting and inventory management using PHP and MySQL.",
+      "Developed and implemented an email-based messaging and ticketing service.",
+      "Connecting the application to hardware such as barcode scanners for restaurants and stores."
+    ],
   },
   {
     jobTitle: "Augmented Reality",
@@ -66,7 +75,10 @@ const experiences = [
     city: "Tehran",
     description: "I created a Red Crescent base map program and provided emergency response training using augmented reality technology.",
     stack: ["Unity Engine", "Vuforia", "Augmented Reality"],
-    bullet: [],
+    bullet: [
+      "Reduced app size from <strong>28MB to 11MB.</strong>",
+      "Implemented the feature to read AR image targets from a server, ensuring the application stays up-to-date and can read daily newspaper articles."
+    ],
   },
   {
     jobTitle: "Game Developer",
@@ -79,7 +91,9 @@ const experiences = [
     city: "",
     description: "Path A 2D game using Unity engine for the Android platform.",
     stack: ["Unity Engine", "Photoshop", "PHP", "MySQL"],
-    bullet: [],
+    bullet: [
+      "The application features a <strong>high score</strong> system that is managed on a server."
+    ],
   },
 ];
 
@@ -91,11 +105,11 @@ const skills = ["Vue.js", "Nuxt.js", "Tailwind CSS", "VueUse", "Vite", "SSR", "T
 <template>
   <div class="w-full overflow-hidden">
     <div class="w-[950px] mx-auto relative pb-10">
-      <img src="/img/beams.jpg" alt="" class="absolute top-1/2 left-1/2 max-w-none -translate-x-1/2 -translate-y-1/2" />
+      <img src="/img/beams.jpg" alt="" class="absolute top-1/2 left-1/2 max-w-none -translate-x-1/2 -translate-y-1/2"/>
       <div class="relative flex flex-col w-11/12 mx-auto">
         <div class="mt-10 flex flex-row">
           <div class="flex w-8/12 flex-row items-center">
-            <img src="/img/profile.jpg" class="rounded-full w-20 h-20 bg-cover object-cover mr-3" />
+            <img src="/img/profile.jpg" class="rounded-full w-20 h-20 bg-cover object-cover mr-3"/>
             <div class="flex flex-col">
               <h1 class="text-2xl font-bold">Hamed Taherpour</h1>
               <h4 class="text-lg font-semibold text-gray-500">Front-end Developer</h4>
@@ -115,7 +129,8 @@ const skills = ["Vue.js", "Nuxt.js", "Tailwind CSS", "VueUse", "Vite", "SSR", "T
           <div class="flex w-8/12 flex-col">
             <h4 class="section-title">EXPERIENCES</h4>
             <div class="flex flex-col mb-5" v-for="item in experiences" :key="item.company.title">
-              <h2 class="text-base font-bold text-black"><a :href="item.company.link" v-text="item.company.title"></a>, {{ item.city }} - {{ item.jobTitle }}</h2>
+              <h2 class="text-base font-bold text-black"><a :href="item.company.link" v-text="item.company.title"></a>,
+                {{ item.city }} - {{ item.jobTitle }}</h2>
               <div class="mt-1 mb-2 text-xs text-gray-400">{{ item.startDate }} - {{ item.endDate }}</div>
               <div class="text-sm text-gray-600">
                 <p v-html="item.description"></p>
