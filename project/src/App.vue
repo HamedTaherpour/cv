@@ -101,7 +101,7 @@ const skills = ["Vue.js", "Nuxt.js", "Tailwind CSS", "VueUse", "Vite", "SSR", "T
 <template>
   <div class="w-full overflow-hidden">
     <div class="w-[950px] mx-auto relative pb-10">
-      <img src="/img/beams.jpg" alt="" class="absolute top-1/2 left-1/2 max-w-none -translate-x-1/2 -translate-y-1/2" />
+      <img src="/img/beams.jpg" alt="" class="absolute left-1/2 max-w-none -translate-x-1/2 -translate-y-1/2" />
       <div class="relative flex flex-col w-11/12 mx-auto">
         <div class="mt-10 flex flex-row">
           <div class="flex w-8/12 flex-row items-center">
