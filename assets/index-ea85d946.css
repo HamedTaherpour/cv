@@ -402,7 +402,7 @@ video {
   background-color: rgb(224 242 254 / var(--tw-bg-opacity));
 }
 .bg-\[url\(\/img\/beams\.jpg\)\] {
-  background-image: url(img/beams.jpg);
+  background-image: url(./img/beams.jpg);
 }
 .bg-cover {
   background-size: cover;
