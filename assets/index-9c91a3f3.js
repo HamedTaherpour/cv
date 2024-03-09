@@ -3437,7 +3437,7 @@ function Qo(e) {
   return Y(e) ? document.querySelector(e) : e;
 }
 const Yo = "img/profile.jpg",
-  Xo = { class: "w-full overflow-hidden bg-[url(img/beams.jpg)]" },
+  Xo = { class: "w-full overflow-hidden bg-[url(/img/beams.jpg)]" },
   Zo = { class: "w-[950px] mx-auto relative pb-10" },
   Go = { class: "relative flex flex-col w-11/12 mx-auto" },
   el = ao(
