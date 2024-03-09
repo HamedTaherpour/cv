@@ -1,18 +1,18 @@
 <script setup>
-  // https://www.sejda.com/html-to-pdf
+// https://www.sejda.com/html-to-pdf
 const experiences = [
   {
     jobTitle: "Front-end Developer",
     company: {
       title: "Pol",
-      link: "https://app.poltalk.me/",
+      link: "https://poltalk.me/",
     },
     startDate: "August, 2023",
     endDate: "Present",
     city: "Remote",
-    description: "Paul is actually a website and application through which you can have online video consultations with psychologists and psychiatrists. Paul gives you the ability to connect to the psychology of your desired expertise at any time and place.",
+    description: "Pol is actually a website and application through which you can have online video consultations with psychologists and psychiatrists. Paul gives you the ability to connect to the psychology of your desired expertise at any time and place.",
     stack: ["Nuxt.js", "TypeScript", "Tailwind CSS", "VueUse", "SSR", "Github"],
-    bullet: ["Fix SEO problems.", "Fix UI issues.", "Increase page loading speed."],
+    bullet: ["Designing and developing the front-end of the website using the Nuxt.js framework", "Utilizing reusable components and achieving rapid code execution with Nuxt.js", "Using Tailwind CSS for responsive and visually appealing design by leveraging CSS utility classes.", "Optimizing code and user experience using Nuxt.js and Tailwind CSS", "Implementing server-side rendering (SSR) with Nuxt.js to enhance SEO performance by ensuring that search engines can easily crawl and index the website's content."],
   },
   {
     jobTitle: "Front-end Developer",
@@ -21,7 +21,7 @@ const experiences = [
       link: "https://arzdigital.com",
     },
     startDate: "Feb, 2021",
-    endDate: "Present",
+    endDate: "Feb, 2024",
     city: "Karaj",
     description: "ArzDigital is the leading news agency in Iran’s cryptocurrency industry with over 30M monthly active users and we provide trading assistance services.",
     stack: ["Vue.js", "Nuxt.js", "TypeScript", "Tailwind CSS", "Quasar", "Storybook", "VueUse", "Vite", "SSR", "Highcharts", "Gitlab"],
@@ -100,9 +100,8 @@ const skills = ["Vue.js", "Nuxt.js", "Tailwind CSS", "VueUse", "Vite", "SSR", "T
 </script>
 
 <template>
-  <div class="w-full overflow-hidden">
+  <div class="w-full overflow-hidden bg-[url(/img/beams.jpg)]">
     <div class="w-[950px] mx-auto relative pb-10">
-      <img src="/img/beams.jpg" alt="" class="absolute left-1/2 max-w-none -translate-x-1/2 -translate-y-1/2" />
       <div class="relative flex flex-col w-11/12 mx-auto">
         <div class="mt-10 flex flex-row">
           <div class="flex w-8/12 flex-row items-center">
@@ -113,7 +112,7 @@ const skills = ["Vue.js", "Nuxt.js", "Tailwind CSS", "VueUse", "Vite", "SSR", "T
             </div>
           </div>
           <div class="flex w-4/12 flex-col gap-y-1 text-sm px-4">
-            <span class="font-medium">(+98) 937-150-8754</span>
+            <a href="tel:09371508754" class="font-medium text-gray-800">(+98) 937-150-8754</a>
             <a href="mailto: dev.hamedt@gmail.com">dev.hamedt@gmail.com</a>
             <div class="flex w-full flex-row gap-x-5">
               <a href="https://github.com/HamedTaherpour" class="capitalize">github</a>
@@ -130,14 +129,13 @@ const skills = ["Vue.js", "Nuxt.js", "Tailwind CSS", "VueUse", "Vite", "SSR", "T
               <div class="mt-1 mb-2 text-xs text-gray-400">{{ item.startDate }} - {{ item.endDate }}</div>
               <div class="text-sm text-gray-600">
                 <p v-html="item.description"></p>
-                <div class="flex flex-wrap mt-1">
+                <div class="flex flex-wrap mt-1 gap-1 items-center">
                   <span class="mr-0.5 px-0.5 text-xs">Stack:</span>
-                  <span v-for="(stack, index) in item.stack" :key="stack" class="px-0.5 text-xs font-medium">
+                  <span v-for="stack in item.stack" :key="stack" class="text-[10px] font-semibold bg-sky-100 ring-1 ring-sky-200 rounded px-1">
                     {{ stack }}
-                    <template v-if="index < item.stack.length - 1">,</template>
                   </span>
                 </div>
-                <ul v-if="item.bullet.length > 0" class="list-inside list-disc text-sm space-y-2 mt-2">
+                <ul v-if="item.bullet.length > 0" class="list-inside list-disc text-xs space-y-2 mt-2">
                   <li v-for="bullet in item.bullet" v-html="bullet" :key="bullet" class="italic"></li>
                 </ul>
               </div>
