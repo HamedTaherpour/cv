@@ -10,9 +10,9 @@ const experiences = [
     startDate: "August, 2023",
     endDate: "Present",
     city: "Remote",
-    description: "Pol is actually a website and application through which you can have online video consultations with psychologists and psychiatrists. Paul gives you the ability to connect to the psychology of your desired expertise at any time and place.",
+    description: "Pol is a website and application for online video consultations with psychologists and psychiatrists, providing access to experts in psychology at any time and place.",
     stack: ["Nuxt.js", "TypeScript", "Tailwind CSS", "VueUse", "SSR", "Github"],
-    bullet: ["Designing and developing the front-end of the website using the Nuxt.js framework", "Utilizing reusable components and achieving rapid code execution with Nuxt.js", "Using Tailwind CSS for responsive and visually appealing design by leveraging CSS utility classes.", "Optimizing code and user experience using Nuxt.js and Tailwind CSS", "Implementing server-side rendering (SSR) with Nuxt.js to enhance SEO performance by ensuring that search engines can easily crawl and index the website's content."],
+    bullet: ["Designing and developing the front-end using the Nuxt.js framework.", "Utilizing reusable components and achieving rapid code execution with Nuxt.js", "Using Tailwind CSS for responsive and visually appealing design.", "Optimizing code and user experience with Nuxt.js and Tailwind CSS.", "Implementing server-side rendering (SSR) with Nuxt.js to enhance SEO performance."],
   },
   {
     jobTitle: "Front-end Developer",
@@ -23,9 +23,9 @@ const experiences = [
     startDate: "Feb, 2021",
     endDate: "Feb, 2024",
     city: "Karaj",
-    description: "ArzDigital is the leading news agency in Iran’s cryptocurrency industry with over 30M monthly active users and we provide trading assistance services.",
+    description: "ArzDigital is the leading news agency in Iran's cryptocurrency industry, serving over 30M monthly active users and providing trading assistance services.",
     stack: ["Vue.js", "Nuxt.js", "TypeScript", "Tailwind CSS", "Quasar", "Storybook", "VueUse", "Vite", "SSR", "Highcharts", "Gitlab"],
-    bullet: ["Implemented server-side rendering to improve website SEO and speed, resulting in a better user experience.", "I improved website performance by chunking JavaScript files and separating code for each page into smaller files, resulting in faster loading times. This reduced the page load time <strong>from 3 seconds to 0.5 seconds.</strong>", "Developed and maintained a consistent design system for the project, resulting in improved visual coherence and an efficient development process. This helped to <strong>reduce 60% of the challenges and discussions</strong> related to design and development.", "Interview <strong>over 20 candidates</<strong>"],
+    bullet: ["Implemented server-side rendering to improve website SEO and speed.", "I improved website performance by chunking JavaScript files and separating code for each page into smaller files, resulting in faster loading times. This reduced the page load time <strong>from 3 seconds to 0.5 seconds.</strong>", "Developed and maintained a consistent design system for the project, resulting in improved visual coherence and an efficient development process. This helped to <strong>reduce 60% of the challenges and discussions</strong> related to design and development.", "Interview <strong>over 20 candidates</<strong>"],
   },
   {
     jobTitle: "Front-end Developer",
