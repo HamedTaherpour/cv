@@ -3639,6 +3639,8 @@ const Yo = "img/profile.jpg",
         s = [
           "Vue.js",
           "Nuxt.js",
+          "React",
+          "Next.js",
           "Tailwind CSS",
           "VueUse",
           "Vite",
