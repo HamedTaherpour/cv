@@ -3488,7 +3488,7 @@ const Yo = "img/profile.jpg",
             jobTitle: "Front-end Developer",
             company: { title: "Pol", link: "https://poltalk.me/" },
             startDate: "August, 2023",
-            endDate: "Present",
+            endDate: "April, 2024",
             city: "Remote",
             description:
               "Pol is a website and application for online video consultations with psychologists and psychiatrists, providing access to experts in psychology at any time and place.",
