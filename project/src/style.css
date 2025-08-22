@@ -3,9 +3,12 @@
 @tailwind utilities;
 
 a {
-  @apply font-semibold  text-[#1154cc];
+  @apply font-semibold  text-sky-600 hover:text-sky-700 transition-all duration-300;
 }
 
+.section-title span {
+  @apply font-black text-lg uppercase tracking-widest text-slate-900;
+}
 .section-title {
-  @apply mb-4 text-sm font-bold uppercase tracking-widest text-sky-400;
+  @apply mb-2 text-3xl flex flex-row items-center;
 }

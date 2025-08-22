@@ -4,41 +4,37 @@ const experiences = [
   {
     jobTitle: "Front-end Developer",
     company: {
+      title: "ArzDigital",
+      link: "https://beta.arzdigital.com",
+    },
+    startDate: "Feb, 2021",
+    endDate: "Present",
+    city: "Karaj",
+    description: "ArzDigital is the leading news agency in Iran's cryptocurrency industry, serving over 30M monthly active users and providing trading assistance services.",
+    stack: ["Vue.js", "Nuxt.js", "TypeScript", "Tailwind CSS", "Nx", "Shadcn"],
+    bullet: [
+      "Contributed to the largest Persian-language crypto website.",
+      "Implemented Nx monorepo with multiple Nuxt 3 apps.",
+      "Shared components and configs via libs/ structure.",
+      "Built internal Design System with TailwindCSS and Shadcn.",
+      "Implemented real-time data with Centrifugo WebSocket.",
+      "Created interactive dashboards with Highcharts and TradingView.",
+      "Optimized SSR and SEO in Nuxt.",
+      "Improved performance: reduced load time and enabled service caching.",
+    ],
+  },
+  {
+    jobTitle: "Front-end Developer",
+    company: {
       title: "Pol",
       link: "https://poltalk.me/",
     },
-    startDate: "August, 2023",
-    endDate: "Present",
-    city: "Remote",
+    startDate: "April, 2023",
+    endDate: "December ",
+    city: "Remote PartTime",
     description: "Pol is a website and application for online video consultations with psychologists and psychiatrists, providing access to experts in psychology at any time and place.",
     stack: ["Nuxt.js", "TypeScript", "Tailwind CSS", "VueUse", "SSR", "Github"],
     bullet: ["Designing and developing the front-end using the Nuxt.js framework.", "Utilizing reusable components and achieving rapid code execution with Nuxt.js", "Using Tailwind CSS for responsive and visually appealing design.", "Optimizing code and user experience with Nuxt.js and Tailwind CSS.", "Implementing server-side rendering (SSR) with Nuxt.js to enhance SEO performance."],
-  },
-  {
-    jobTitle: "Front-end Developer",
-    company: {
-      title: "ArzDigital",
-      link: "https://arzdigital.com",
-    },
-    startDate: "Feb, 2021",
-    endDate: "Feb, 2024",
-    city: "Karaj",
-    description: "ArzDigital is the leading news agency in Iran's cryptocurrency industry, serving over 30M monthly active users and providing trading assistance services.",
-    stack: ["Vue.js", "Nuxt.js", "TypeScript", "Tailwind CSS", "Quasar", "Storybook", "VueUse", "Vite", "SSR", "Highcharts", "Gitlab"],
-    bullet: ["Implemented server-side rendering to improve website SEO and speed.", "I improved website performance by chunking JavaScript files and separating code for each page into smaller files, resulting in faster loading times. This reduced the page load time <strong>from 3 seconds to 0.5 seconds.</strong>", "Developed and maintained a consistent design system for the project, resulting in improved visual coherence and an efficient development process. This helped to <strong>reduce 60% of the challenges and discussions</strong> related to design and development.", "Interview <strong>over 20 candidates</<strong>"],
-  },
-  {
-    jobTitle: "Front-end Developer",
-    company: {
-      title: "MagicalAPI",
-      link: "https://magicalapi.com",
-    },
-    startDate: "Sep, 2022",
-    endDate: "Nov, 2022",
-    city: "Remote",
-    description: "MagicalAPI is a provider of cloud-based APIs for developers and companies.",
-    stack: ["Vue.js", "Nuxt.js", "TypeScript", "Tailwind CSS", "Storybook", "VueUse", "Vite", "SSR", "Highcharts", "Gitlab"],
-    bullet: ["I designed and implemented a unique and responsive landing page using Tailwind CSS, featuring various optimized animations to enhance user experience and reduce loading times."],
   },
   {
     jobTitle: "Front-end Developer",
@@ -66,37 +62,11 @@ const experiences = [
     stack: ["jQuery", "UIKit", "Bootstrap", "PHP", "CodeIgniter", "MySQL", "Gitlab"],
     bullet: ["Developed a restaurant website for accounting and inventory management using PHP and MySQL.", "Developed and implemented an email-based messaging and ticketing service.", "Connecting the application to hardware such as barcode scanners for restaurants and stores."],
   },
-  {
-    jobTitle: "Augmented Reality",
-    company: {
-      title: "Raro",
-      link: "http://raro.ir",
-    },
-    startDate: "Mar, 2016",
-    endDate: "Jul, 2016",
-    city: "Tehran",
-    description: "I created a Red Crescent base map program and provided emergency response training using augmented reality technology.",
-    stack: ["Unity Engine", "Vuforia", "Augmented Reality"],
-    bullet: ["Reduced app size from <strong>28MB to 11MB.</strong>", "Implemented the feature to read AR image targets from a server, ensuring the application stays up-to-date and can read daily newspaper articles."],
-  },
-  {
-    jobTitle: "Game Developer",
-    company: {
-      title: "Path",
-      link: "https://cafebazaar.ir/app/ir.HamedTaherpour.Path",
-    },
-    startDate: "Jun, 2015",
-    endDate: "Sep, 2016",
-    city: "",
-    description: "Path A 2D game using Unity engine for the Android platform.",
-    stack: ["Unity Engine", "Photoshop", "PHP", "MySQL"],
-    bullet: ["The application features a <strong>high score</strong> system that is managed on a server."],
-  },
 ];
 
 const ConceptKnowledge = ["VCS (Git)"];
 
-const skills = ["Vue.js", "Nuxt.js", "Tailwind CSS", "VueUse", "Vite", "SSR", "TypeScript", "Highcharts", "Storybook", "Gitlab", "Quasar", "Vuetify", "jQuery", "UIKit", "Bootstrap"];
+const skills = ["Vue.js", "Nuxt.js", "React.js", "Next.js", "Tailwind CSS", "Cursor", "Design System", "Design Components", "Shadcn", "VueUse", "Vite", "SSR", "TypeScript", "Highcharts", "Storybook", "Gitlab", "Quasar", "Vuetify", "jQuery", "UIKit", "Bootstrap"];
 </script>
 
 <template>
@@ -105,13 +75,13 @@ const skills = ["Vue.js", "Nuxt.js", "Tailwind CSS", "VueUse", "Vite", "SSR", "T
       <div class="relative flex flex-col w-11/12 mx-auto">
         <div class="mt-10 flex flex-row">
           <div class="flex w-8/12 flex-row items-center">
-            <img src="/img/profile.jpg" class="rounded-full w-20 h-20 bg-cover object-cover mr-3" />
-            <div class="flex flex-col">
-              <h1 class="text-2xl font-bold">Hamed Taherpour</h1>
-              <h4 class="text-lg font-semibold text-gray-500">Front-end Developer</h4>
+            <div class="flex flex-col items-start">
+              <h1 class="text-3xl font-bold">Hamed Taherpour</h1>
+              <h4 class="text-2xl font-semibold text-slate-600 border-b-2 border-dashed border-sky-500">Front-end
+                Developer</h4>
             </div>
           </div>
-          <div class="flex w-4/12 flex-col gap-y-1 text-sm px-4">
+          <div class="flex w-4/12 flex-col gap-y-1 text-lg px-4">
             <a href="tel:09371508754" class="font-medium text-gray-800">(+98) 937-150-8754</a>
             <a href="mailto: dev.hamedt@gmail.com">dev.hamedt@gmail.com</a>
             <div class="flex w-full flex-row gap-x-5">
@@ -121,28 +91,31 @@ const skills = ["Vue.js", "Nuxt.js", "Tailwind CSS", "VueUse", "Vite", "SSR", "T
             </div>
           </div>
         </div>
+        <div class="flex flex-col mt-10 items-start">
+          <h4 class="section-title"> <span>About Me</span></h4>
+          <p class="font-semibold text-slate-700">
+            Experienced Front-end Developer with over 7 years of expertise in building and optimizing web applications.
+            Specializing in Vue.js and Nuxt.js, I have a strong background in developing scalable, high-performance web
+            solutions, creating interactive dashboards, and improving user experience. Proven ability to lead projects,
+            implement best practices, and collaborate effectively to deliver impactful results. </p>
+        </div>
         <div class="mt-10 flex flex-row">
-          <div class="flex w-8/12 flex-col">
-            <h4 class="section-title">EXPERIENCES</h4>
+          <div class="flex w-8/12 flex-col items-start">
+            <h4 class="section-title"><span>EXPERIENCES</span></h4>
             <div class="flex flex-col mb-5" v-for="item in experiences" :key="item.company.title">
-              <h2 class="text-base font-bold text-black"><a :href="item.company.link" v-text="item.company.title"></a>, {{ item.city }} - {{ item.jobTitle }}</h2>
-              <div class="mt-1 mb-2 text-xs text-gray-400">{{ item.startDate }} - {{ item.endDate }}</div>
-              <div class="text-sm text-gray-600">
-                <p v-html="item.description"></p>
-                <div class="flex flex-wrap mt-1 gap-1 items-center">
-                  <span class="mr-0.5 px-0.5 text-xs">Stack:</span>
-                  <span v-for="stack in item.stack" :key="stack" class="text-[10px] font-semibold bg-sky-100 ring-1 ring-sky-200 rounded px-1">
-                    {{ stack }}
-                  </span>
-                </div>
-                <ul v-if="item.bullet.length > 0" class="list-inside list-disc text-xs space-y-2 mt-2">
-                  <li v-for="bullet in item.bullet" v-html="bullet" :key="bullet" class="italic"></li>
+              <h2 class="text-base font-bold text-black"><a :href="item.company.link" v-text="item.company.title"></a>,
+                {{ item.city }} - {{ item.jobTitle }}</h2>
+              <div class="mt-1 mb-2 text-xs text-slate-500">{{ item.startDate }} - {{ item.endDate }}</div>
+              <div class="text-sm text-slate-700">
+                <p class="text-slate-800" v-html="item.description"></p>
+                <ul v-if="item.bullet.length > 0" class="list-inside list-disc text-sm space-y-2 mt-2">
+                  <li v-for="bullet in item.bullet" v-html="bullet" :key="bullet"></li>
                 </ul>
               </div>
             </div>
           </div>
-          <div class="flex w-4/12 flex-col px-4">
-            <h4 class="section-title">SKILLS</h4>
+          <div class="flex w-4/12 flex-col items-start px-4">
+            <h4 class="section-title"><span>SKILLS</span></h4>
             <span class="font-bold">Tools / Technologies: </span>
             <ul class="list-inside list-disc font-semibold text-sm space-y-2 mt-1">
               <li v-for="item in skills" :key="item" v-text="item" class=""></li>
@@ -151,10 +124,10 @@ const skills = ["Vue.js", "Nuxt.js", "Tailwind CSS", "VueUse", "Vite", "SSR", "T
             <ul class="list-inside list-disc font-semibold text-sm space-y-2 mt-1">
               <li v-for="item in ConceptKnowledge" :key="item" v-text="item"></li>
             </ul>
-            <h4 class="section-title mt-5">EDUCATION</h4>
+            <h4 class="section-title mt-5"><span>EDUCATION</span></h4>
             <div>
               <h2 class="text-base font-bold text-black">Kardani of Qods - Tehran Qods</h2>
-              <div class="mt-1 mb-2 text-xs text-gray-400">2017</div>
+              <div class="mt-1 mb-2 text-xs text-slate-700">2017</div>
             </div>
           </div>
         </div>
